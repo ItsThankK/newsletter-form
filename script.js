@@ -1,7 +1,7 @@
 const form = document.querySelector(".card__form");
 const cardWithForm = document.querySelector(".card");
 const cardSuccess = document.querySelector(".card-success");
-const submitBtn = document.querySelector(".btn[type='submit']")
+const submitBtn = document.querySelector(".btn[type='submit']");
 const dismissBtn = document.querySelector(".btn-card-success");
 const inputField = document.querySelector("input");
 const errorMessage = document.querySelector(".error-state");
@@ -30,6 +30,7 @@ form.addEventListener("submit", (e) => {
 
   cardWithForm.classList.toggle("hidden");
   cardSuccess.classList.toggle("hidden");
+  cardSuccess.querySelector("span").textContent = `${inputField.value}`;
 });
 
 dismissBtn.addEventListener("click", () => {
