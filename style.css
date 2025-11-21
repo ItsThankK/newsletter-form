@@ -31,6 +31,7 @@ body {
   font-weight: var(--fw-small);
   font-size: 1.6rem;
   background-color: var(--clr-neutral-700);
+  color: var(--clr-neutral-800);
 }
 
 img {
@@ -65,8 +66,20 @@ img {
   flex-direction: column;
 }
 
-.card__form-list li {
+.class__form-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+li {
   list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+li img {
+  display: inline;
 }
 
 .card__image-container {
