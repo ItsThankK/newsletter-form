@@ -107,7 +107,7 @@ input:hover {
 }
 
 .btn {
-  padding: 1rem 3rem;
+  padding: 1.5rem 3rem;
   background-color: var(--clr-neutral-800);
   color: var(--clr-neutral-100);
   border: none;
