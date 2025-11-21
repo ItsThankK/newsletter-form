@@ -1,6 +1,7 @@
 const form = document.querySelector(".card__form");
 const cardWithForm = document.querySelector(".card");
 const cardSuccess = document.querySelector(".card-success");
+const submitBtn = document.querySelector(".btn[type='submit']")
 const dismissBtn = document.querySelector(".btn-card-success");
 const inputField = document.querySelector("input");
 const errorMessage = document.querySelector(".error-state");
@@ -12,6 +13,7 @@ inputField.addEventListener("input", () => {
 
     errorMessage.textContent = "Valid email required";
     errorMessage.style.color = "red";
+    submitBtn.classList.add("disabled");
   }
 
   if (validator.isEmail(inputField.value)) {
@@ -19,6 +21,7 @@ inputField.addEventListener("input", () => {
 
     errorMessage.textContent = "Valid email ✅";
     errorMessage.style.color = "green";
+    submitBtn.classList.remove("disabled");
   }
 });
 
