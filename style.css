@@ -51,6 +51,10 @@ img {
   align-items: center;
 }
 
+.bold {
+  font-weight: var(--fw-large);
+}
+
 /* Block */
 .card {
   background-color: var(--clr-neutral-100);
@@ -92,6 +96,29 @@ li img {
 .card__image-container {
   width: 32rem;
   height: auto;
+}
+
+.card-success {
+  background-color: var(--clr-neutral-100);
+  font-size: 1.25rem;
+  padding: 3rem;
+  width: 35rem;
+  height: 35rem;
+  border-radius: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.card-success__img {
+  width: 5rem;
+}
+
+.card-success__heading {
+  font-size: 3.5rem;
+  font-weight: var(--fw-large);
+  line-height: 1;
 }
 
 label {
@@ -140,7 +167,6 @@ input.error {
   display: none;
 }
 
-/* Exception */
 .btn:hover {
   cursor: pointer;
   background-color: var(--clr-primary);
@@ -186,4 +212,27 @@ input.error {
   .card__form-heading {
     font-size: 4rem;
   }
+
+  .card-success {
+  font-size: 1.7rem;
+  padding: 0;
+  margin-inline: 2rem;
+  margin-top: 10rem;
+  height: auto;
+  border-radius: 0;
+}
+
+.card-success__img {
+  width: 5rem;
+}
+
+.card-success__heading {
+  font-size: 5rem;
+  font-weight: var(--fw-large);
+  line-height: 1;
+}
+
+.btn-card-success {
+  margin-top: 50%;
+}
 }
