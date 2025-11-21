@@ -95,15 +95,37 @@ li img {
 }
 
 label {
-  margin-bottom: -1rem;
+  margin-bottom: -0.7rem;
+  font-size: 1rem;
+}
+
+.label-state {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 input {
   padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 input:hover {
   cursor: pointer;
+}
+
+
+input.error {
+  border: 2px solid var(--clr-primary);
+  outline: none;
+  color: var(--clr-primary);
+}
+
+.error-state {
+  color:var(--clr-primary);
+  font-size: 1rem;
+  font-weight: var(--fw-large);
+  margin-bottom: -0.7rem;
 }
 
 .btn {
