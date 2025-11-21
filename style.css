@@ -102,6 +102,10 @@ input {
   padding: 1rem;
 }
 
+input:hover {
+  cursor: pointer;
+}
+
 .btn {
   padding: 1rem 3rem;
   background-color: var(--clr-neutral-800);
@@ -110,7 +114,16 @@ input {
   border-radius: 0.5rem;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Exception */
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--clr-primary);
+  box-shadow: 0px 10px 10px 0px hsla(4, 100%, 67%, 0.2);
+}
 
 @media screen and (max-width: 768px) {
   .card-container {
