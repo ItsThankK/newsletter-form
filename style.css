@@ -129,6 +129,7 @@ input {
 @media screen and (max-width: 461px) {
   body {
     background-color: var(--clr-neutral-100);
+    font-size: 1.6rem;
   }
   .section-main {
     height: auto;
@@ -141,5 +142,13 @@ input {
   .card {
     padding: 0;
     border-radius: 0;
+  }
+
+  .card__form {
+    gap: 1.5rem;
+  }
+
+  .card__form-heading {
+    font-size: 4rem;
   }
 }
