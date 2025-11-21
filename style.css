@@ -69,6 +69,7 @@ img {
 
 .card__form-heading {
   font-weight: var(--fw-large);
+  font-size: 5.2rem;
 }
 
 .class__form-list {
@@ -110,3 +111,25 @@ input {
 }
 
 /* Exception */
+
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    margin-inline: 2rem;
+  }
+  .card {
+    flex-direction: column-reverse;
+  }
+
+  .card__image-container {
+  width: 100%;
+}
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    background-color: red;
+  }
+  
+
+}
