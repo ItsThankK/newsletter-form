@@ -1,11 +1,11 @@
 :root {
   /* Colors */
---clr-primary: hsl(4, 100%, 67%);
+  --clr-primary: hsl(4, 100%, 67%);
 
---clr-neutral-800: hsl(234, 29%, 20%);
---clr-neutral-700: hsl(235, 18%, 26%);
---clr-neutral-400: hsl(0, 0%,58%);
---clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-800: hsl(234, 29%, 20%);
+  --clr-neutral-700: hsl(235, 18%, 26%);
+  --clr-neutral-400: hsl(0, 0%, 58%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
 
   /* Font */
   --ff-roboto: "Roboto", sans-serif;
@@ -37,3 +37,42 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* Composition */
+.section-main {
+  height: 100vh;
+}
+
+/* Utility */
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Block */
+.card {
+  background-color: var(--clr-neutral-100);
+  padding: 2rem;
+  border-radius: 2rem;
+  display: flex;
+}
+
+.card__form {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__form-list li {
+  list-style: none;
+}
+
+.card__image-container {
+  width: 25rem;
+  height: auto;
+}
+
+/* Exception */
+
+
