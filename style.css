@@ -55,11 +55,12 @@ img {
   background-color: var(--clr-neutral-100);
   padding: 2rem;
   border-radius: 2rem;
+  max-width: 70rem;
   display: flex;
 }
 
 .card__form {
-  padding: 4rem;
+  padding: 4rem 4rem 4rem 2rem;
   display: flex;
   flex-direction: column;
 }
