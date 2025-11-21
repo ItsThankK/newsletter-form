@@ -112,24 +112,34 @@ input {
 
 /* Exception */
 
-
 @media screen and (max-width: 768px) {
   .card-container {
     margin-inline: 2rem;
   }
+
   .card {
     flex-direction: column-reverse;
   }
 
   .card__image-container {
-  width: 100%;
-}
-}
-
-@media screen and (max-width: 425px) {
-  body {
-    background-color: red;
+    width: 100%;
   }
-  
+}
 
+@media screen and (max-width: 461px) {
+  body {
+    background-color: var(--clr-neutral-100);
+  }
+  .section-main {
+    height: auto;
+  }
+
+  .card-container {
+    margin-inline: 0;
+  }
+
+  .card {
+    padding: 0;
+    border-radius: 0;
+  }
 }
