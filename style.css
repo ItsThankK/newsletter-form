@@ -173,6 +173,11 @@ input.error {
   box-shadow: 0px 10px 10px 0px hsla(4, 100%, 67%, 0.2);
 }
 
+.disabled {
+  opacity: 0.8;
+  pointer-events: none;
+}
+
 @media screen and (max-width: 768px) {
   .card-container {
     margin-inline: 2rem;
