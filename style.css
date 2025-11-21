@@ -1,0 +1,39 @@
+:root {
+  /* Colors */
+--clr-primary: hsl(4, 100%, 67%);
+
+--clr-neutral-800: hsl(234, 29%, 20%);
+--clr-neutral-700: hsl(235, 18%, 26%);
+--clr-neutral-400: hsl(0, 0%,58%);
+--clr-neutral-100: hsl(0, 0%, 100%);
+
+  /* Font */
+  --ff-roboto: "Roboto", sans-serif;
+
+  --fw-small: 400;
+  --fw-large: 700;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--ff-roboto);
+  font-weight: var(--fw-small);
+  font-size: 1.6rem;
+  background-color: var(--clr-neutral-700);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
